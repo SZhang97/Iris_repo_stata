@@ -22,5 +22,12 @@ save "C:\Users\rmjdszh\OneDrive - University College London\Iris_repo_stata\Iris
 ******************************************
 *3.Filter the Setosa data
 ******************************************
+tab iris
+tab iris, nolabel
+
+*Setosa == 1 
+
+keep if iris == 1 
+
 
 Filter Iris Setosa records and export to a new dataset
