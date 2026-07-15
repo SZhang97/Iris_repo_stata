@@ -32,3 +32,14 @@ keep if iris == 1
 
 save "C:\Users\rmjdszh\OneDrive - University College London\Iris_repo_stata\Setosa.dta"
 
+******************************************
+*4.Spilt the Iris data
+******************************************
+
+use http://www.stata-press.com/data/r18/iris, clear
+
+splitsample, generate(svar, replace) split(0.7 0.3) show rseed(16)
+
+frame put iris seplen sepwid petlen petwid if svar==1, into(training)
+frame put iris seplen sepwid petlen petwid if svar==2, into(test)
+frames dir
