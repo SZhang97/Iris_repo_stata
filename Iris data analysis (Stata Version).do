@@ -43,3 +43,23 @@ splitsample, generate(svar, replace) split(0.7 0.3) show rseed(16)
 frame put iris seplen sepwid petlen petwid if svar==1, into(training)
 frame put iris seplen sepwid petlen petwid if svar==2, into(test)
 frames dir
+
+cd "C:\Users\rmjdshc\OneDrive - University College London\Iris_repo_stata\"
+
+summarize seplen sepwid petlen
+summarize seplen sepwid petlen
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
